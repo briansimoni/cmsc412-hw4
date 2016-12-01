@@ -20,7 +20,7 @@ func main() {
 	}
 	var s string
 	for _, v := range S {
-		s += v
+		s += v + " "
 	}
 	s += "\n"
 	s += string(strconv.FormatFloat(E, 'f', -4, 64))
