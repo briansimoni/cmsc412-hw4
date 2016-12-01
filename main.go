@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"strconv"
+	"fmt"
 )
 
 
@@ -13,8 +13,6 @@ func main() {
 
 	g, k := createGraphFromFile("graph.txt")
 	S, E := g.influenceMaximization(k)
-	fmt.Println(S)
-	fmt.Println(E)
 
 	file, err := os.Create("im.txt")
 	if err != nil {
